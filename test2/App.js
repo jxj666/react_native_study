@@ -14,6 +14,13 @@ import {
 } from 'react-native';
 import View1 from './component/View1';
 import View2 from './component/View2';
+import View3 from './component/View3';
+import View4 from './component/View4';
+// import View5 from './component/View5';
+import View6 from './component/View6';
+
+
+
 
 const instructions = Platform.select({
   ios: `ios`,
@@ -35,6 +42,9 @@ export default class App extends Component<Props> {
         <Image source={pic} style={styles.img}></Image>
         <View1 name={instructions} />
         <View2 text='react native'/>
+        <View3 />
+        <View4 text='abc'/>
+        <View6 />
       </View>
     );
   }
@@ -58,8 +68,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   img:{
-    width:300,
-    height:300,
+    width:100,
+    height:100,
     backgroundColor:'#eee',
   }
 });
