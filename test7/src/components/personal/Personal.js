@@ -83,20 +83,27 @@ const CSS = StyleSheet.create({
 	fontSize: 12
   },
   phoneContainer: {
+  	marginTop:30,
 	flex: 1,
 	alignItems: 'center',
 	justifyContent: 'center'
   },
   phone: {
 	fontSize: 12,
-	color: '#4787d6'
+	color: '#13227a'
   },
   userText:{
   	fontSize:20,
   	marginTop:20,
 	height:30,
 	lineHeight:30,
-	color:'#999',
+	color:'#13227a',
+	marginBottom: 20,
+  }, userInfoText:{
+  	fontSize:16,
+	height:25,
+	lineHeight:25,
+	color:'#13227a',
   }
 });
 
@@ -146,7 +153,7 @@ class Personal extends React.Component {
 			{ this.renderLoginEle() }
 		  </View>
 		  <View style={ CSS.phoneContainer }>
-			<Text style={ { fontSize: 12 } }>
+			<Text style={ CSS.phone }>
 			  客服电话 : 
 			  <Text style={ CSS.phone }>1709263003</Text>
 			</Text>
@@ -155,16 +162,6 @@ class Personal extends React.Component {
 	);
   }
 
-  renderService = (text, src, component) => {
-	return (
-		<TouchableOpacity
-			style={ CSS.serviceItem }
-			onPress={ () => this.props.navigation.navigate(component) }>
-		  <Image source={ src } style={ CSS.icon }/>
-		  <Text style={ CSS.servieText }>{ text }</Text>
-		</TouchableOpacity>
-	);
-  };
 
   renderLoginEle = () => {
 	if (1) {
@@ -172,7 +169,8 @@ class Personal extends React.Component {
 		  <View style={ CSS.avatarWrapper }>
 			<Image source={ { uri: `https://jxj322991.github.io/2018imgs/img/png/01.png` } } style={ CSS.avatar }/>
 			<Text style={CSS.userText}>异阳</Text>
-			<Text style={CSS.userText}>超级会员</Text>
+			<Text style={CSS.userInfoText}>男</Text>
+			<Text style={CSS.userInfoText}>超级会员</Text>
 		  </View>
 	  );
 	} 

@@ -73,7 +73,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "Navigation.js"
+    entryFile: "index.js"
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -98,7 +98,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.omengo_hybrid_v2"
+        applicationId "com.haohuan_demo"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1

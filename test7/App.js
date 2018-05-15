@@ -23,9 +23,6 @@ const App = StackNavigator(
 	  PayResult: {
 		screen: PayResult
 	  },
-	  Order: {
-		screen: Order
-	  },
 	},
 	{
 	  // initialRouteName: 'TabNavbar',

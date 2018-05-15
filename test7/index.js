@@ -1,3 +1,3 @@
 import { AppRegistry } from 'react-native';
 
-AppRegistry.registerComponent('omengo_hybrid_v2', () => require('./App'));
+AppRegistry.registerComponent('haohuan_demo', () => require('./App'));
